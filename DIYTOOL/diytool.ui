@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DIYTOOLClass</class>
+ <widget class="QMainWindow" name="DIYTOOLClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DIYTOOL</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="btn_timeTask">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>启动定时弹框</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_min">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_close">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_testqml">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>测试QML</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>40</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>待完成任务</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="diytool.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_timeTask</sender>
+   <signal>clicked()</signal>
+   <receiver>DIYTOOLClass</receiver>
+   <slot>btnTimeTaskSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>58</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_min</sender>
+   <signal>clicked()</signal>
+   <receiver>DIYTOOLClass</receiver>
+   <slot>windowMin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>540</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_close</sender>
+   <signal>clicked()</signal>
+   <receiver>DIYTOOLClass</receiver>
+   <slot>windowClose()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>578</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_testqml</sender>
+   <signal>clicked()</signal>
+   <receiver>DIYTOOLClass</receiver>
+   <slot>btnTestQmlSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>69</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btnTimeTaskSlot()</slot>
+  <slot>windowMin()</slot>
+  <slot>windowClose()</slot>
+  <slot>btnTestQmlSlot()</slot>
+ </slots>
+</ui>

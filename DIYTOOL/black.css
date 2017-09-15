@@ -1,0 +1,31 @@
+
+QPushButton#btn_close{
+	background: transparent;
+	border-image: url(Resources/close_normal.png);
+}
+QPushButton#btn_close:hover{
+	background: transparent;
+	border-image: url(Resources/close_hover.png);
+}
+
+QPushButton#btn_close:pressed{
+	background: transparent;
+	border-image: url(Resources/close_pressed.png);
+}
+
+QPushButton#btn_min{
+	background: transparent;
+	border-image: url(Resources/min_normal.png);
+}
+QPushButton#btn_min:hover{
+	background: transparent;
+	border-image: url(Resources/min_hover.png);
+}
+
+QPushButton#btn_min:pressed{
+	background: transparent;
+	border-image: url(Resources/min_pressed.png);
+}
+
+
+

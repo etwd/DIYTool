@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/close_hover.png</file>
+        <file>Resources/close_normal.png</file>
+        <file>Resources/close_pressed.png</file>
+        <file>Resources/min_hover.png</file>
+        <file>Resources/min_normal.png</file>
+        <file>Resources/min_pressed.png</file>
+    </qresource>
+</RCC>
